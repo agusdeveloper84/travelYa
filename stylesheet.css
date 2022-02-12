@@ -1,0 +1,318 @@
+/* Global styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  font-size: 2.6rem;
+}
+
+li,
+button,
+label,
+input,
+p {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 4.8rem;
+}
+
+h3 {
+  font-size: 3rem;
+  font-weight: normal;
+}
+
+h4,
+h5 {
+  font-size: 2.8rem;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+button {
+  padding: 2rem 6rem;
+  background: #4c6e97;
+  border-style: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: white;
+  transition: background 0.5s ease-in-out;
+}
+
+button:hover {
+  background: #09274d;
+}
+
+/*Section with HERO  */
+
+.main-head {
+  background: #131c27;
+  color: white;
+  position: sticky;
+  top: 0px;
+  z-index: 3;
+}
+
+nav {
+  display: flex;
+  padding: 0.5rem;
+  width: 90%;
+  margin: auto;
+  min-height: 10vh;
+  align-items: center;
+  flex-wrap: wrap;
+ 
+}
+nav ul {
+  display: flex;
+  flex: 1 1 40rem;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+
+#logo {
+  flex: 2 1 40rem;
+  font-family: "Pattaya", sans-serif;
+  font-weight: 400;
+}
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), transparent),
+    url("./images/pexels-sam-kolder-2387873.jpg");
+  min-height: 90vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.hero h3 {
+  padding: 5rem;
+}
+
+@keyframes cloudAnimations {
+  from {
+    transform: translate(10%, -10%);
+  }
+  to {
+    transform: translate(0%, 0%);
+  }
+}
+
+/*BENEFITS SECTION*/
+#locations {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), transparent),
+    url("./images/chris-leipelt-ybQkQ4oj8rs-unsplash.jpg");
+  background-position: center;
+  display: flex;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+
+.locations-head {
+  width: 90%;
+  margin: auto;
+  padding-bottom: 20rem;
+}
+
+.locations-head h2 {
+  padding: 1rem 0rem;
+  text-decoration: underline;
+  text-decoration-thickness: 0.5rem;
+  color: rgb(0, 0, 0);
+}
+
+.locations-head h3 {
+  padding: 4rem 0rem;
+}
+
+.cloud {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  width: 45%;
+  pointer-events: none;
+}
+
+.moving-cloud-1 {
+  opacity: 0.6;
+  animation: cloudAnimations 3s infinite alternate ease-in-out;
+}
+.moving-cloud-2 {
+  opacity: 0.6;
+  padding-top: 10rem;
+  padding-left: 10rem;
+  animation: cloudAnimations 3s infinite alternate ease-in-out;
+}
+
+.benefits-head h3{
+    padding: 1rem;
+}
+
+.card img{
+    max-width: 15%;
+    margin: 2rem;
+}
+.card h4,
+.card p {
+    padding: 2rem;
+}
+.cards {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    min-height: 70vh;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.card {
+    min-height: 40vh;
+    margin: 2rem 5rem;
+    flex: 1 1 25rem;
+    margin: 2rem 5rem;
+    box-shadow:  0px 10px 10px rgba(0, 0, 0, 0.5),0px 20px 20px rgba(0, 0, 0, 0.5) ;
+}
+
+.icon-res{
+    background: #4c6e97;
+}
+
+#contact{
+    min-height: 120vh;
+    background: linear-gradient(rgba(0,0,0,0.5), transparent),
+     url("./images/andrea-ledda-4EwI7yI5Q_8-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-wrapper{
+    background: rgba(0, 0, 0, 0.5);
+    width: 45%;
+    color: white;
+    border-radius: 20px;
+}
+.form-wrapper label{
+    margin: 0rem 3rem;
+}
+
+.form-wrapper button{
+    width: 100%;
+    padding: 2rem;
+    margin-top: 8rem;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.form-wrapper input {
+    padding: 1rem 3rem;
+}
+
+.form-head{
+    text-align: center;
+    padding: 4rem;
+}
+
+.name-form, 
+.email-form{
+    padding: 3rem;
+    text-align: center;
+}
+
+footer{
+    color: white;
+    background: rgb(109, 127, 150);
+    text-align: center;
+}
+
+.footer-wrapper{
+    display: flex;
+    padding: 2rem;
+    width: 90%;
+    margin: auto;
+    align-items: center;
+    min-height: 10vh;
+    flex-wrap: wrap;
+    
+}
+footer h5{
+    flex: 1 1 40rem;
+  }
+footer ul{
+    display: flex;
+    list-style: none;
+    flex: 1 1 40rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo{
+    width: 4rem;
+    
+}
+
+/* Media Query*/
+@media screen and (max-width: 932px) {
+  html {
+    font-size: 45%;
+  }
+  nav {
+    text-align: center;
+  }
+  #logo {
+    padding: 2rem;
+  }
+  .cloud {
+    height: 20rem;
+  }
+  .form-wrapper{
+    width: 100%;
+  }
+  footer h5 {
+    text-align: center;
+  }
+  .locations-head h3,h2{
+    text-align: center;
+  }
+ 
+}
+
+/*BENEFITS HEAD*/
+.benefits-head{
+    background: #343c44;
+    padding: 3rem;
+    min-height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+
+}
